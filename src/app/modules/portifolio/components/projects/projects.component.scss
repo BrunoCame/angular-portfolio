@@ -1,0 +1,53 @@
+:host {
+  padding: 25px 0;
+  background-color: #2a2a30;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    li {
+      flex: 20%;
+      height: 150px;
+
+      button {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+
+        background-color: #2a2a30;
+        border: 2px solid #2fbf71;
+        border-radius: 7px;
+        transition: 0.4s;
+
+        &:hover {
+          background-color: #2fbf71;
+          img {
+            filter: invert(100%);
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 750px) {
+    ul {
+      li {
+        flex: 100%;
+      }
+    }
+  }
+}

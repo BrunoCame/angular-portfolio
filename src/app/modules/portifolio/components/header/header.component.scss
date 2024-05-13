@@ -1,0 +1,138 @@
+:host {
+  &::before {
+    content: "";
+    display: flex;
+    background-image: url("../../../../../assets/img/codeImage2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    margin-bottom: -65px;
+  }
+
+  header,
+  aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header img {
+    width: 150px;
+    height: 150px;
+    border: 5px solid white;
+    border-radius: 50%;
+  }
+
+  header h1 {
+    padding-top: 10px;
+  }
+
+  aside {
+    p {
+      text-align: center;
+    }
+
+    nav {
+      margin: 20px 0;
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        // width: 100%;
+
+        li {
+          a {
+            width: 250px;
+            padding: 10px;
+            // border-radius: 5px;
+            // background-color: aqua;
+          }
+        }
+      }
+    }
+
+    section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+
+      figure {
+        width: 300px;
+        height: 77px;
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        border: 1px solid #fff;
+        border-radius: 7px;
+        cursor: pointer;
+
+        figcaption {
+          a {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+          }
+
+          p {
+            margin: 3px 0;
+          }
+
+          strong {
+            color: #2fbf71;
+          }
+        }
+      }
+
+      figure:hover {
+        background: #2fbf71;
+
+        img {
+          filter: invert(100%);
+        }
+
+        p {
+          color: #10101a;
+        }
+
+        figcaption {
+          strong {
+            color: #10101a;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 750px) {
+    aside {
+      nav {
+        ul {
+          flex-direction: column;
+          gap: 15px;
+
+          li,
+          li a {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    section {
+      flex-direction: column;
+      gap: 15px figure {
+        width: 100%;
+      }
+    }
+  }
+}

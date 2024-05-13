@@ -1,0 +1,32 @@
+<div class="divDialog">
+  <header>
+    <h2>Meu GitHub</h2>
+    <button mat-dialog-close>
+      <img src="../../../../../assets/icons/close.svg" alt="" />
+    </button>
+  </header>
+
+  <mat-dialog-content class="mat-typography">
+    <p>
+      No meu GitHub, você pode conferir diversos projetos, incluindo este que
+      você está visualizando agora. Lá, você encontrará meu trabalho, explorando
+      arquiteturas, frameworks e padrões de design que utilizo para desenvolver
+      aplicações.
+    </p>
+  </mat-dialog-content>
+
+  <mat-dialog-actions>
+    <nav>
+      <button
+        style="margin: 1px solid #2fbf71"
+        class="btn btn-abrir"
+        [mat-dialog-close]="true"
+        cdkFocusInitial
+      >
+        <a href="https://github.com/BrunoCame" target="_blank"
+          >Acessar GitHub</a
+        >
+      </button>
+    </nav>
+  </mat-dialog-actions>
+</div>
